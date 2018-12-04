@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title My Company
+    link(rel="stylesheet", href="css/main.css")
+    script(src="js/main.js")
+  body
+    .header
+      .container
+        .header-logo
+          a.header-logo__link(href="index.html") mycompany
+        nav.header-menu#menu
+          .header-menu__item
+            a.header-menu__link.active(href="#") home
+          .header-menu__item
+            a.header-menu__link(href="#") about
+          .header-menu__item
+            a.header-menu__link(href="#") services
+          .header-menu__item
+            a.header-menu__link(href="#") portfolio
+          .header-menu__item
+            a.header-menu__link(href="#") testimonials
+          .header-menu__item
+            a.header-menu__link(href="#") contact
+        .header-burger#burger
+          svg.menu-open
+            use(xlink:href='img/menu-icons.svg#menu-open')
+          svg.menu-close
+            use(xlink:href='img/menu-icons.svg#menu-close')
+    section.main
+      .container
+        .main-info
+          p.main-info__text We are a digital agency with years of experience and with extraordinary people
+          h1.main-info__title welcome on <span>mycompany</span>
+    section.about
+      .container
+        .about-img
+          img(src="img/mac.png", alt="Mac")
+        .about-descr
+          h3.about-title Some words about us
+          p.about-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus.
+          ul.about-list
+            li.about-list__item <span>Mission</span> - We deliver uniqueness and quality
+            li.about-list__item <span>Skills</span> - Delivering fast and excellent results
+            li.about-list__item <span>Clients</span> - Satisfied clients thanks to our experience
